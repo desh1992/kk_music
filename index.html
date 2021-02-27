@@ -16,8 +16,8 @@
 
 <body>
 	<div class="banner">
-		<img src="./assets/new KK.jpg" alt="KK" class="banner-img">
-		<div class="name">
+		<img src="./assets/Banner-image-1.png" alt="KK" class="banner-img">
+		<!-- <div class="name">
 			<div class="first-name">
 				<span>K</span><span>AIULANI</span>
 			</div>
@@ -25,134 +25,88 @@
 				<span>K</span><span>IMBRELL</span>
 			</div>
 
-		</div>
+		</div> -->
 	</div>
 	<div class="content">
 		<div class="title">
 			KAIULANI KIMBRELL: Pre-Release Access
 		</div>
 		<div class="subtitle">
-			For your consideration:Here are 4 select tracks from Kaiulani’s upcoming release: <b><i>After the
-					Storm</i></b>
+			For your consideration:Here are 4 select tracks from Kaiulani’s upcoming release: <b><i>Start Again...Live Again</i></b>
 		</div>
 		<div class="songs">
-			<div class="main">
-				<!--- left part --->
-				<div class="left">
 
-					<!--- song img --->
+			<div class="main">
+				<div class="left">
 					<img src="./assets/thrive.jpg">
-
 				</div>
-				<div class="middle">
-					<p id="title">Thrive</p>
-				</div>
-
-
-				<!--- right part --->
-				<div class="right">
-
-					<!--- song title & artist name --->
-
-
-					<!--- middle part --->
-					<div class="play">
-						<button onclick="justplay(track_thrive)" id="play_thrive"><i class="fa fa-play"
-								aria-hidden="true"></i></button>
+				<div class="right-outer">
+					<div class="middle">
+						<div class="play">
+							<button onclick="justplay(track_thrive)" id="play_thrive"><i class="fa fa-play"
+									aria-hidden="true"></i></button>
+						</div>
+						<p id="title">Thrive</p>
 					</div>
-
-					<!--- song duration part --->
-					<div class="duration">
-						<input type="range" min="0" max="100" value="0" id="duration_slider_thrive"
-							onchange="change_duration(track_thrive)">
-					</div>
-					<div class="volume">
-						<p id="volume_show_thrive">90</p>
-						<i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound(track_thrive)"
-							id="volume_icon"></i>
-						<input type="range" min="0" max="100" value="90" onchange="volume_change(track_thrive)"
-							id="volume_thrive">
+					<div class="right">
+						<div class="duration">
+							<input type="range" min="0" max="100" value="0" id="duration_slider_thrive"
+								onchange="change_duration(track_thrive)">
+						</div>
 					</div>
 				</div>
+
 			</div>
 
 			<div class="main">
-				<!--- left part --->
 				<div class="left">
-
-					<!--- song img --->
 					<img src="./assets/infinity.jpg">
-
 				</div>
-				<div class="middle">
-					<p id="title">Infinity (feat Rajan Batra) (Sony Music India)</p>
-				</div>
-
-				<!--- right part --->
-				<div class="right">
-
-
-
-
-					<!--- middle part --->
-					<div class="play">
-						<button onclick="justplay(track_infinity)" id="play_infinity"><i class="fa fa-play"
-								aria-hidden="true"></i></button>
+				<div class="right-outer">
+					<div class="middle">
+						<div class="play">
+							<button onclick="justplay(track_infinity)" id="play_infinity"><i class="fa fa-play"
+									aria-hidden="true"></i></button>
+						</div>
+						<p id="title">Infinity (feat Rajan Batra) (Sony Music India)</p>
 					</div>
-
-					<!--- song duration part --->
-					<div class="duration">
-						<input type="range" min="0" max="100" value="0" id="duration_slider_infinity"
-							onchange="change_duration(track_infinity)">
-					</div>
-					<div class="volume">
-						<p id="volume_show_infinity">90</p>
-						<i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound(track_infinity)"
-							id="volume_icon"></i>
-						<input type="range" min="0" max="100" value="90" onchange="volume_change(track_infinity)"
-							id="volume_infinity">
+					<div class="right">
+						<div class="duration">
+							<input type="range" min="0" max="100" value="0" id="duration_slider_infinity"
+								onchange="change_duration(track_infinity)">
+						</div>
 					</div>
 				</div>
 			</div>
-
 			<div class="main">
-				<!--- left part --->
 				<div class="left">
-
-					<!--- song img --->
 					<img src="./assets/startagain.jpg">
-
 				</div>
-				<div class="middle">
-					<p id="title">Bonus track released 12.28.20: *Start Again (Acoustic)</p>
-				</div>
-
-				<!--- right part --->
-				<div class="right">
-
-
-
-					<!--- middle part --->
-					<div class="play">
-						<button onclick="justplay(track_start_again)" id="play_start_again"><i class="fa fa-play"
-								aria-hidden="true"></i></button>
+				<div class="right-outer">
+					<div class="middle">
+						<div class="play">
+							<button onclick="justplay(track_start_again)" id="play_start_again"><i class="fa fa-play"
+									aria-hidden="true"></i></button>
+						</div>
+						<p id="title">Bonus track released 12.28.20: *Start Again (Acoustic)</p>
 					</div>
-
-					<!--- song duration part --->
-					<div class="duration">
-						<input type="range" min="0" max="100" value="0" id="duration_slider_start_again"
-							onchange="change_duration(track_start_again)">
-					</div>
-					<div class="volume">
-						<p id="volume_show_start_again">90</p>
-						<i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound(track_start_again)"
-							id="volume_icon"></i>
-						<input type="range" min="0" max="100" value="90" onchange="volume_change(track_start_again)"
-							id="volume_start_again">
+					<div class="right">
+						<div class="duration">
+							<input type="range" min="0" max="100" value="0" id="duration_slider_start_again"
+								onchange="change_duration(track_start_again)">
+						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
+		<div class="about-img">
+		<img src="./assets/new KK.jpg" alt="">
+		<div class="about-content">
+			<p class="about-title">ABOUT</p>
+			<p class="about-inner-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, repellendus? Blanditiis dolorem eius quaerat dolor ut eos quas, voluptatum ullam.</p>
+		</div>
+	</div>
 		<div class="footer">
 			<span>
 				For inquiries email:
@@ -168,9 +122,7 @@
 			</span>
 		</div>
 	</div>
-	<div class="img-1"></div>
-	<div class="img-2"></div>
-	<div class="img-3"></div>
+	
 
 
 
