@@ -244,6 +244,9 @@
 	font-weight: 400;
 	font-size: 11px;
 }
+.copyright {
+	font-size: 12px;
+}
 
 @media only screen and (min-width: 600px) {
 	/* For tablets: */
