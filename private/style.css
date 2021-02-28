@@ -49,6 +49,8 @@
 	font-weight: 300;
 	text-align: center;
 	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
 }
 .content .songs {
 	font-weight: 300;
@@ -83,6 +85,13 @@
 	flex-direction: column;
 	align-items: center;
 	margin: 2rem;
+}
+.footer .contact {
+	margin: 1rem;
+}
+.contact-inner {
+	display: flex;
+	flex-direction: column;
 }
 #email,
 #phone {
@@ -204,7 +213,7 @@
 	margin-left: -30%;
 }
 .about-content {
-	width: 66vw;
+	width: 65vw;
 	height: max-content;
 	background: rgba(255, 255, 255, 0.8);
 	position: absolute;
@@ -226,14 +235,14 @@
 }
 .about-inner-content {
 	text-align: left;
-	font-size: 12px;
-	font-weight: 300;
+	font-size: 11px;
+	font-weight: 400;
 	padding: 4px;
 }
 .about-inner-content > p {
 	margin-top: 0.5rem;
-	font-weight: 300;
-	font-size: 12px;
+	font-weight: 400;
+	font-size: 11px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -243,7 +252,7 @@
 	}
 	.about-img img {
 		width: 500px;
-		margin-left: -20%;
+		margin-left: -25%;
 	}
 	.about-content {
 		height: max-content;
@@ -263,8 +272,8 @@
 	}
 	.about-inner-content > p {
 		margin-top: 1rem;
-		font-weight: 300;
-		font-size: 12px;
+		font-weight: 400;
+		font-size: 11px;
 	}
 }
 @media only screen and (min-width: 768px) {
@@ -287,7 +296,7 @@
 	}
 	.about-img img {
 		width: 700px;
-		margin-left: -10%;
+		margin-left: -25%;
 	}
 	.about-content {
 		width: 35vw;
@@ -307,7 +316,7 @@
 	}
 	.about-inner-content > p {
 		margin-top: 1rem;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 14px;
 	}
 	.content .songs {
