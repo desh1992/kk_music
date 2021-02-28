@@ -80,7 +80,8 @@
 	align-items: center;
 	margin: 2rem;
 }
-.footer > span > span {
+#email,
+#phone {
 	color: #0047ff;
 	font-weight: 400;
 	text-decoration: underline;
@@ -117,13 +118,6 @@
 	font-weight: 400;
 	padding: 8px;
 }
-/* .right {
-	width: 40%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 3px;
-} */
 .right .play,
 .right .duration,
 .right .volume {
@@ -206,9 +200,9 @@
 	margin-left: -30%;
 }
 .about-content {
-	width: 200px;
-	height: 200px;
-	background: white;
+	width: 250px;
+	height: max-content;
+	background: rgba(255, 255, 255, 0.8);
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -228,9 +222,14 @@
 }
 .about-inner-content {
 	text-align: left;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
 	padding: 4px;
+}
+.about-inner-content > p {
+	margin-top: 0.5rem;
+	font-weight: 300;
+	font-size: 12px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -243,9 +242,9 @@
 		margin-left: -20%;
 	}
 	.about-content {
+		height: max-content;
 		width: 300px;
-		height: 250px;
-		background: white;
+		background: rgba(255, 255, 255, 0.8);
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -257,6 +256,11 @@
 		-webkit-box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
 		box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=40, Direction=135, Color=#000000); /*IE 5.5-7*/
+	}
+	.about-inner-content > p {
+		margin-top: 1rem;
+		font-weight: 300;
+		font-size: 12px;
 	}
 }
 @media only screen and (min-width: 768px) {
@@ -283,8 +287,8 @@
 	}
 	.about-content {
 		width: 450px;
-		height: 300px;
-		background: white;
+		height: max-content;
+		background: rgba(255, 255, 255, 0.8);
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -296,6 +300,10 @@
 		-webkit-box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
 		box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=40, Direction=135, Color=#000000); /*IE 5.5-7*/
+	}
+	.about-inner-content > p {
+		margin-top: 1rem;
+		font-weight: 300;
 	}
 	.content .songs {
 		font-weight: 300;
