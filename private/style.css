@@ -1,0 +1,331 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+}
+
+.banner {
+	margin-top: 2rem;
+	position: relative;
+}
+.banner-img {
+	width: 95%;
+	height: 100%;
+}
+.banner .name {
+	font-size: 24px;
+	position: absolute;
+	top: 3rem;
+	right: 3.2rem;
+}
+.first-name > span:first-of-type,
+.last-name > span:first-of-type {
+	color: white;
+}
+.first-name > span,
+.last-name > span {
+	color: #f000b6;
+	letter-spacing: 2px;
+	filter: drop-shadow(4px 2px 2px hsla(0, 0%, 0%, 0.30));
+}
+.last-name {
+	font-weight: 300;
+}
+.content .title {
+	font-size: 20px;
+	font-weight: 400;
+	color: #f000b6;
+	padding: 1rem 4rem 1rem;
+	text-align: center;
+}
+.content .title span {
+	display: flex;
+	flex-direction: column;
+}
+.content .subtitle {
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+	padding: 0 1rem;
+}
+.content .songs {
+	font-weight: 300;
+	font-size: 18px;
+	padding: 1rem;
+}
+.songs .bonus {
+	margin-top: 1rem;
+}
+.songs .player {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	background: #f1f3f4;
+	border: 1px solid #f000b6;
+	margin-bottom: 1rem;
+}
+.songs .player .song-cover {
+	height: 100px;
+	width: 100px;
+}
+.songs .player .song-cover img {
+	width: inherit;
+	height: inherit;
+}
+.content .footer {
+	font-weight: 300;
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem;
+}
+#email,
+#phone {
+	color: #0047ff;
+	font-weight: 400;
+	text-decoration: underline;
+}
+.left {
+	height: 100px;
+	width: 100px;
+}
+.left img {
+	height: inherit;
+	width: inherit;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.main {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	margin: 1rem 0;
+}
+.duration {
+	width: 100%;
+}
+.duration input {
+	width: inherit;
+}
+.middle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.middle p {
+	font-size: 12px;
+	font-weight: 400;
+	padding: 8px;
+}
+.right .play,
+.right .duration,
+.right .volume {
+	padding: 4px;
+}
+.right-outer {
+	width: 100%;
+	padding-left: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	margin: 8px;
+}
+/* both range slider part */
+.duration input[type="range"] {
+	-webkit-appearance: none;
+	outline: none;
+	height: 2px;
+	background: grey;
+	width: inherit;
+}
+.duration input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 20px;
+	width: 20px;
+	background: #fd6ad8;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.volume input[type="range"] {
+	-webkit-appearance: none;
+	outline: none;
+	height: 2px;
+	background: grey;
+	width: inherit;
+}
+.volume input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 20px;
+	width: 20px;
+	background: #fd6ad8;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.volume {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.volume p,
+.volume i {
+	padding-right: 2px;
+}
+#play {
+	background: #fd6ad8;
+}
+.right button:hover {
+	background: #fd6ad8;
+}
+.play i:before {
+	color: #fff;
+	font-size: 20px;
+}
+.right .volume i:before {
+	color: grey;
+	font-size: 20px;
+}
+.play button {
+	background: #fd6ad8;
+	border: none;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+.about-img {
+	position: relative;
+	overflow: hidden;
+}
+.about-img img {
+	width: 100vw;
+	margin-left: -30%;
+}
+.about-content {
+	width: 66vw;
+	height: max-content;
+	background: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	text-align: center;
+	padding: 0.5rem;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=40, Direction=0, Color=#000000)"; /*IE 8*/
+	-moz-box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /*FF 3.5+*/
+	-webkit-box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=40, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+.about-title {
+	font-size: 20px;
+	font-weight: 400;
+	color: #f000b6;
+}
+.about-inner-content {
+	text-align: left;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 4px;
+}
+.about-inner-content > p {
+	margin-top: 0.5rem;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.content {
+		margin: 1rem 20%;
+	}
+	.about-img img {
+		width: 500px;
+		margin-left: -20%;
+	}
+	.about-content {
+		height: max-content;
+		width: 45vw;
+		background: rgba(255, 255, 255, 0.8);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		text-align: center;
+		padding: 2rem;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=40, Direction=0, Color=#000000)"; /*IE 8*/
+		-moz-box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /*FF 3.5+*/
+		-webkit-box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+		box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=40, Direction=135, Color=#000000); /*IE 5.5-7*/
+	}
+	.about-inner-content > p {
+		margin-top: 1rem;
+		font-weight: 300;
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.banner {
+		margin-top: 2rem;
+		position: relative;
+		text-align: center;
+	}
+	.banner-img {
+		width: 800px;
+		height: 100%;
+	}
+	.content .title {
+		font-size: 20px;
+		font-weight: 400;
+		color: #f000b6;
+		padding: 0 4rem 1rem;
+		text-align: center;
+	}
+	.about-img img {
+		width: 700px;
+		margin-left: -10%;
+	}
+	.about-content {
+		width: 35vw;
+		height: max-content;
+		background: rgba(255, 255, 255, 0.8);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		text-align: center;
+		padding: 2rem;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=40, Direction=0, Color=#000000)"; /*IE 8*/
+		-moz-box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /*FF 3.5+*/
+		-webkit-box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+		box-shadow: 0 15px 40px -17px rgba(0, 0, 0, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=40, Direction=135, Color=#000000); /*IE 5.5-7*/
+	}
+	.about-inner-content > p {
+		margin-top: 1rem;
+		font-weight: 300;
+		font-size: 14px;
+	}
+	.content .songs {
+		font-weight: 300;
+		font-size: 18px;
+		padding: 1rem 6rem;
+	}
+	.content .title {
+		font-size: 20px;
+		font-weight: 400;
+		color: #f000b6;
+		padding: 1rem 6rem 1rem;
+		text-align: center;
+	}
+	.content .subtitle {
+		font-size: 16px;
+		font-weight: 300;
+		text-align: center;
+		padding: 0 8rem;
+	}
+}
