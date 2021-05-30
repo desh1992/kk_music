@@ -1,0 +1,153 @@
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+.left-about {
+	position: relative;
+	padding: 2rem;
+}
+
+.box {
+	background-color: #f2c0f0;
+	border-radius: 8px;
+}
+
+.box-1 {
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.box-2 {
+	width: 18rem;
+	height: 18rem;
+	background-image: url(./new-KK-min.jpg);
+	background-size: cover;
+}
+
+.box-3 {
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+	bottom: 0;
+	left: 17rem;
+	z-index: -1;
+}
+
+.right-about {
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+	justify-content: center;
+}
+
+.title {
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.description {
+	font-size: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+	.box-1 {
+		width: 15rem;
+		height: 15rem;
+	}
+	.box-2 {
+		width: 25rem;
+		height: 25rem;
+	}
+	.box-3 {
+		width: 8rem;
+		height: 8rem;
+		left: 22rem;
+	}
+	.right-about {
+		width: 25rem;
+	}
+
+	.title {
+		font-size: 5rem;
+	}
+	.description {
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.profile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		padding: 1rem;
+	}
+	.box-1 {
+		width: 15rem;
+		height: 15rem;
+	}
+	.box-2 {
+		width: 25rem;
+		height: 25rem;
+	}
+	.box-3 {
+		width: 8rem;
+		height: 8rem;
+		left: 22rem;
+	}
+	.right-about {
+		width: 25rem;
+	}
+
+	.title {
+		font-size: 5rem;
+	}
+	.description {
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.profile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		padding: 2rem;
+	}
+	.left-about {
+		padding: 2rem;
+	}
+	.box-1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.box-2 {
+		width: 35rem;
+		height: 35rem;
+	}
+	.box-3 {
+		width: 10rem;
+		height: 10rem;
+		left: 29rem;
+	}
+	.right-about {
+		width: 25rem;
+	}
+
+	.title {
+		font-size: 5rem;
+	}
+	.description {
+		font-size: 1.1rem;
+	}
+}

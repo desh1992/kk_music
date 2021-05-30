@@ -1,0 +1,499 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	transition: ease-out 0.5s;
+}
+
+body {
+	background-image: linear-gradient(90deg, #bc396f 0%, #cc6b8e 50%, #bc396f 100%);
+	/* position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0; */
+}
+
+.d-col-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dash {
+	height: 5px;
+	border-radius: 8px;
+	margin: 4px 0;
+	background-color: rgb(255 255 255);
+}
+.nav-title {
+	text-transform: capitalize;
+	margin: auto;
+}
+
+.container {
+	/* margin: 1rem; */
+}
+
+.header {
+	margin: 2rem 0;
+}
+
+.header,
+.header-right {
+	display: flex;
+	justify-content: space-between;
+}
+.header-right {
+	min-width: 250px;
+}
+
+.left {
+	/* position: relative; */
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	min-width: 250px;
+	position: absolute;
+	right: 1rem;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	/* position: relative; */
+	justify-content: space-between;
+	/* padding: 4rem; */
+}
+
+.title-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: fixed;
+	top: 38rem;
+}
+
+.title-text .first {
+	font-size: 74px;
+	text-transform: uppercase;
+}
+
+.title-text .last {
+	font-size: 42px;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+
+.album-cover-image {
+	text-align: center;
+}
+
+.album-cover-title .heading {
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 24px;
+}
+.album-cover-title {
+	text-align: center;
+}
+
+.album-cover-title .sub-heading {
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.top {
+	margin-bottom: 2rem;
+}
+
+.bottom .store {
+	text-transform: uppercase;
+	width: 160px;
+	font-weight: 300;
+	font-size: 18px;
+	border: 3.5px solid #bfb4d4;
+	text-align: center;
+	padding: 8px 0 6px 0;
+	border-radius: 2rem;
+	margin-bottom: 1rem;
+	background-color: rgba(140, 115, 189, 0.3);
+	backdrop-filter: blur(10px);
+	cursor: pointer;
+}
+
+.no-dec {
+	text-decoration: none;
+}
+.nav-title:hover a {
+	font-size: 1.5rem;
+}
+
+.bottom .store:hover {
+	/* font-size: 1.5rem; */
+	transform: scale(1.2);
+	/* width: 4rem;
+	height: 1rem; */
+}
+
+/* .bottom .store:hover {
+	width: 12rem;
+	height: 4rem;
+} */
+
+/* .length-1 {
+	width: 30px;
+} */
+
+.length-2 {
+	width: 22px !important;
+}
+
+.length-3 {
+	width: 33px !important;
+}
+
+.title-image {
+	width: 100%;
+	height: auto;
+}
+
+.title-image img {
+	width: inherit;
+	min-width: 70rem;
+	position: fixed;
+	transform: translateX(-45%);
+}
+
+.album-cover-image img {
+	width: 10rem;
+	border-radius: 10px;
+}
+.header-left {
+	margin: 0 1rem;
+}
+
+#menuToggle {
+	display: block;
+	position: relative;
+	/* top: 50px;
+	left: 50px; */
+
+	z-index: 1;
+
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#menuToggle a {
+	text-decoration: none;
+	color: #232323;
+
+	transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+	color: tomato;
+}
+
+#menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+
+	cursor: pointer;
+
+	opacity: 0; /* hide this */
+	z-index: 2; /* and place it over the hamburger */
+
+	-webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+
+	background: #fff;
+	border-radius: 3px;
+
+	z-index: 1;
+
+	transform-origin: 4px 0px;
+
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+		opacity 0.55s ease;
+}
+
+#menuToggle span .length-2 {
+	width: 22px !important;
+}
+
+#menuToggle span:first-child {
+	transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+	position: absolute;
+	width: max-content;
+	margin: -100px 0 0 -50px;
+	padding: 50px;
+	padding-top: 125px;
+	background: rgb(255 255 255 / 50%);
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	transform-origin: 0% 0%;
+	transform: translate(-100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+	backdrop-filter: blur(10px);
+}
+
+#menu li {
+	padding: 10px 0;
+	font-size: 42px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+	transform: none;
+}
+
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.header-right {
+		min-width: 250px;
+	}
+	.right {
+		min-width: 250px;
+		margin: 0 2rem;
+	}
+	.header {
+		margin: 2rem;
+	}
+	.title-image img {
+		min-width: 60rem;
+		transform: translateX(-30%);
+	}
+
+	.title-text {
+		top: 34rem;
+	}
+
+	.title-text .first {
+		font-size: 94px;
+	}
+
+	.title-text .last {
+		font-size: 42px;
+	}
+
+	.bottom .store {
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+	}
+
+	.album-cover-image img {
+		width: 14rem;
+		border-radius: 10px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.header-right {
+		min-width: 250px;
+	}
+	.right {
+		min-width: 250px;
+		margin: 0 2rem;
+	}
+	.header {
+		margin: 2rem;
+	}
+	.title-image img {
+		/* max-width: 65rem; */
+		min-width: 60rem;
+		transform: translateX(-20%);
+	}
+
+	.title-text {
+		top: 34rem;
+	}
+
+	.title-text .first {
+		font-size: 94px;
+	}
+
+	.title-text .last {
+		font-size: 42px;
+	}
+
+	.bottom .store {
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+	}
+
+	.album-cover-image img {
+		width: 18rem;
+		border-radius: 10px;
+	}
+}
+
+/* @media screen and (max-width: 768px), screen and (min-height: 1020px) {
+	For ipad:
+	.header-right {
+		min-width: 250px;
+	}
+	.right {
+		min-width: 250px;
+		margin: 0 2rem;
+	}
+	.header {
+		margin: 2rem;
+	}
+	.title-image img {
+		max-width: 65rem;
+		min-width: 60rem;
+		transform: translateX(-20%);
+	}
+
+	.bottom .store {
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+	}
+
+	.album-cover-image img {
+		width: 18rem;
+		border-radius: 10px;
+	}
+} */
+
+@media only screen and (min-width: 1024px) {
+	/* For desktop: */
+	.header-right {
+		min-width: 250px;
+	}
+	.right {
+		min-width: 250px;
+		margin: 0 2rem;
+	}
+	.header {
+		margin: 2rem;
+	}
+	.title-image img {
+		max-width: 72rem;
+		min-width: 65rem;
+		transform: translate(-20%, -10%);
+	}
+
+	.title-text {
+		top: 34rem;
+	}
+
+	.title-text .first {
+		font-size: 114px;
+	}
+
+	.title-text .last {
+		font-size: 72px;
+	}
+
+	/* .layover {
+		width: 100vw !important;
+		height: 50vh !important;
+		background: linear-gradient(0, hsl(335deg 64% 50%) -10%, transparent 30%);
+		position: fixed;
+		bottom: 0;
+		z-index: 10;
+	} */
+
+	.bottom .store {
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+	}
+
+	.album-cover-image img {
+		width: 18rem;
+		border-radius: 10px;
+	}
+}
+
+/* @media screen and (max-width: 1024px), screen and (min-height: 1100px) {
+	For ipad-pro:
+	.header-right {
+		min-width: 250px;
+	}
+	.right {
+		min-width: 250px;
+		margin: 0 2rem;
+	}
+	.header {
+		margin: 2rem;
+	}
+	.title-image img {
+		max-width: 65rem;
+		min-width: 110rem;
+		transform: translateX(-30%);
+	}
+
+	.bottom .store {
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+	}
+
+	.album-cover-image img {
+		width: 18rem;
+		border-radius: 10px;
+	}
+} */
